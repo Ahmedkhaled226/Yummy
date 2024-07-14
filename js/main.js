@@ -355,7 +355,7 @@ async function getIngredientsMeals(ingredients) {
 
 function showSearchInputs() {
     searchContainer.innerHTML = `
-    <div class="row py-4">
+    <div class="row py-4 gy-3">
         <div class="col-md-6">
             <input onkeyup="searchByName(this.value)" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
         </div>
