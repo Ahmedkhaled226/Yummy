@@ -1,6 +1,26 @@
 const shareIcon = document.getElementById('shareIcon');
 let searchContainer = document.getElementById('searchContainer')
+document.addEventListener('DOMContentLoaded', function() {
+    const navHeader = document.querySelector('.nav-header');
 
+    document.addEventListener('mousemove', function(event) {
+        if (window.innerWidth <= 768) {
+            const mouseX = event.clientX;
+
+            if (mouseX <= 70) {
+                //  navHeader.style.left = '-20.562px';
+                navHeader.style.transform = 'translateX(-3px)';
+                navHeader.style.transition = 'transform 0.3s ease';
+            } else {
+                navHeader.style.transform = 'translateX(-74.562px)';
+                navHeader.style.transition = 'transform 0.3s ease';
+            }
+        }
+        if (window.innerWidth > 768){
+            navHeader.style.transform = 'translateX(0px)';
+        }
+    });
+});
 shareIcon.addEventListener('click', async () => {
     if (navigator.share) {
         try {
