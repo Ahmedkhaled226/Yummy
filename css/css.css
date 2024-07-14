@@ -89,14 +89,9 @@ section .container {
     }
 }
 @media (max-width: 576px) {
-    .logo {
-        width: 40px;
-    }
+
 }
 @media (max-width: 767px) {
-    .logo {
-        width: 40px;
-    }
      section .container {
         padding-left: 20px;
         padding-right: 20px;
