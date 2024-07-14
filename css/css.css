@@ -67,7 +67,10 @@ body {
     left: -256.562px;
     transition: left 0.3s ease;
 }
-
+.nav-header span{
+    font-size: .8rem;
+    color: #3c2626;
+}
 i {
     cursor: pointer;
 }
